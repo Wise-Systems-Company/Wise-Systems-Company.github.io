@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wise Systems — Инновации будущего уже сегодня</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #3498db;
+      --accent: #1abc9c;
+      --light: #ecf0f1;
+      --dark: #2c3e50;
+      --gray: #95a5a6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.6rem;
+      color: var(--secondary);
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #34495e;
+    }
+
+    .status {
+      display: inline-block;
+      background: var(--light);
+      color: var(--gray);
+      font-size: 0.8rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      margin-top: 0.5rem;
+    }
+
+    .team {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .team-member {
+      text-align: center;
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      min-width: 140px;
+    }
+
+    .team-member h4 {
+      margin-top: 0.5rem;
+      color: var(--primary);
+    }
+
+    .cta {
+      text-align: center;
+      background: var(--light);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--secondary);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      margin: 0.5rem;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #2980b9;
+    }
+
+    .btn-support {
+      background: var(--accent);
+    }
+
+    .btn-support:hover {
+      background: #16a085;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Wise Systems 🌐</h1>
+    <p>Создаём автономные, интеллектуальные и экологически ориентированные технологии для будущего</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Наши проекты 🚀</h2>
+      <div class="projects-grid">
+        <!-- Генерируем карточки проектов -->
+        <div class="project-card">
+          <h3>Геркулес 🛻</h3>
+          <p>Автономный сухопутный исследовательский дрон для сбора данных об окружающей среде, популяции организмов, анализе почвы, воздуха и погоды.</p>
+          <span class="status">Стадия проектирования</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Икар 🛩️</h3>
+          <p>Автономный воздушный дрон для экомониторинга, анализа флоры, пожарной безопасности и ретрансляции связи.</p>
+          <span class="status">Стадия проектирования</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Аид (Мохол) ⛏️</h3>
+          <p>Подземный дрон для исследования тектонической активности и анализа подземной среды.</p>
+          <span class="status">Стадия проектирования</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Одиссей 🌊</h3>
+          <p>Автономная подводная субмарина с радиоуправлением, возможностью возврата в порт и интеграцией с Wise Hub.</p>
+          <span class="status">Стадия проектирования</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Wise Garden 🌱</h3>
+          <p>Умный садовник: автоматический полив, анализ здоровья растений и коррекция условий произрастания.</p>
+          <span class="status">Проектирование + тестовый стенд</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Умное зеркало 🪞</h3>
+          <p>Интерфейс управления умным домом через зеркало: новости, почта, уведомления и контроль устройств.</p>
+          <span class="status">Стадия проектирования</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Morpheus 🧘</h3>
+          <p>Депривационная камера отдыха с настраиваемой атмосферой и звукопоглощением.</p>
+          <span class="status">Теоретическое исследование</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Helios 📡</h3>
+          <p>Приёмник радиосигналов с широким диапазоном, анализом спектров и интеграцией с дронами.</p>
+          <span class="status">Стадия проектирования</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Heimdall 🔭</h3>
+          <p>Астрограф-телескоп для мониторинга звёздного неба на базе чувствительной камеры и оптического зума.</p>
+          <span class="status">Теоретическая стадия</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Poseidon 🐠</h3>
+          <p>Умный аквариум с автоподкормкой, мониторингом воды и мобильным приложением.</p>
+          <span class="status">В разработке</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Wise App / Home CRM 📋</h3>
+          <p>Локальный планировщик задач для семьи: делегирование, таск-листы, локальный сервер.</p>
+          <span class="status">Концепция</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Wise Hub 🌐</h3>
+          <p>Центральный кроссплатформенный хаб для управления дронами и назначения заданий на карте.</p>
+          <span class="status">Стадия проектирования</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Asclepius ❤️</h3>
+          <p>Приложение для мониторинга здоровья: карта тела, симптомы, ИИ-рекомендации по врачам и анализам.</p>
+          <span class="status">В разработке</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Notebook Audio/Text 🎙️</h3>
+          <p>Аудиодневник с ИИ-распознаванием речи, категоризацией и поиском по тексту и аудио.</p>
+          <span class="status">Идея / обсуждение</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Auction Bot 💰</h3>
+          <p>Telegram-бот для проведения аукционов, учёта лотов и виртуальной валюты.</p>
+          <span class="status">Идея / обсуждение</span>
+        </div>
+
+        <div class="project-card">
+          <h3>AR Navigation 🗺️</h3>
+          <p>Приложение дополненной реальности для навигации по зданиям и достопримечательностям через QR/коды.</p>
+          <span class="status">Концепция</span>
+        </div>
+
+        <div class="project-card">
+          <h3>GPS-трекер для OpenStreetMap 📍</h3>
+          <p>Мобильное приложение для создания отметок и внесения данных в OpenStreetMap.</p>
+          <span class="status">Планируется</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Безопасный чат 🛡️</h3>
+          <p>Кроссплатформенный мессенджер с современным шифрованием и уникальными функциями.</p>
+          <span class="status">Идея</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Наша команда 👨‍💻</h2>
+      <div class="team">
+        <div class="team-member">
+          <h4>sne1ku</h4>
+          <p>Инженер-энтузиаст</p>
+        </div>
+        <div class="team-member">
+          <h4>ZzMaximko</h4>
+          <p>Архитектор решений</p>
+        </div>
+        <div class="team-member">
+          <h4>nonadminus</h4>
+          <p>Разработчик и визионер</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <p>Хотите быть в курсе наших обновлений или поучаствовать в обсуждении?</p>
+      <a href="https://t.me/wise_systems" target="_blank" class="btn">Присоединиться к Telegram 📬</a>
+      <a href="https://boosty.to/wise_systems" target="_blank" class="btn btn-support">Поддержать разработку 💙</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Wise Systems. Все идеи — в работу. Все проекты — в будущее.</p>
+  </footer>
+
+</body>
+</html>
