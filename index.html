@@ -111,19 +111,45 @@
       margin-top: 1.5rem;
     }
 
-    .team-member {
-      text-align: center;
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      min-width: 140px;
-    }
+    .team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
 
-    .team-member h4 {
-      margin-top: 0.5rem;
-      color: var(--primary);
-    }
+  /* Сделаем .team-member ссылкой, а не div */
+  .team-member {
+    text-align: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    min-width: 140px;
+    text-decoration: none; /* убираем подчёркивание */
+    color: inherit; /* наследуем цвет текста */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+  }
+  
+  .team-member h4 {
+    margin-top: 0.5rem;
+    color: var(--primary);
+  }
+  
+  .team-member span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    font-weight: bold;
+  }
+  
 
     .cta {
       text-align: center;
