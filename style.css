@@ -225,3 +225,37 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
+/* Анимации */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.project-card h3 .emoji {
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+  animation-delay: calc(var(--delay) * 0.2s);
+}
+
+/* Фильтрация (скрыто по умолчанию) */
+.filter-bar {
+  text-align: center;
+  margin: 1.5rem 0;
+  display: none; /* раскомментируйте, когда понадобится */
+}
+
+.filter-bar button {
+  background: var(--light);
+  border: 1px solid var(--gray);
+  padding: 0.4rem 0.8rem;
+  margin: 0.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.filter-bar button.active,
+.filter-bar button:hover {
+  background: var(--secondary);
+  color: white;
+}
