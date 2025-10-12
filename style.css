@@ -124,9 +124,7 @@ body {
 }
 
 /* Разделительная линия */
-.project-card::after {
-  content: '';
-  display: block;
+.divider {
   height: 1px;
   background: var(--light);
   margin: 0.8rem 0;
