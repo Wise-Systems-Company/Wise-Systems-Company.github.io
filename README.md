@@ -46,7 +46,7 @@
 
 - [**sne1ku**](https://github.com/sne1ku) — Инженер-энтузиаст  
 - [**ZzMaximko**](https://github.com/ZzMaximko) — Архитектор решений  
-- [**nonadminus**](https://github.com/nonadminus) — Разработчик и визионер
+- [**nonadminus**](https://github.com/Ignatiy) — Разработчик и визионер
 
 ---
 
@@ -54,7 +54,7 @@
 
 - Присоединяйтесь к обсуждению в [Telegram-группе](https://t.me/wise_systems)  
 - Хотите помочь или поддержать развитие? → [Поддержать проект 💙](https://boosty.to/wise_systems)  
-- Нашли ошибку или есть идея? Открывайте [Issue](https://github.com/wise-systems/wise-systems/issues)!
+- Нашли ошибку или есть идея? Открывайте [Issue](https://github.com/wise-systems/wise-systems/issues) или пишите на адрес it-nk@outlook.com!
 
 ---
 
