@@ -99,6 +99,7 @@ body {
   text-decoration: none;
   color: inherit;
   transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
 }
 
 .project-card:hover {
@@ -110,11 +111,39 @@ body {
   font-size: 1.3rem;
   margin-bottom: 0.6rem;
   color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .project-card p {
   font-size: 0.95rem;
   color: #34495e;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+/* Разделительная линия */
+.project-card::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: var(--light);
+  margin: 0.8rem 0;
+  width: 100%;
+}
+
+/* Статус — ниже линии */
+.project-card .status {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  top: 0;
 }
 
 /* Team */
