@@ -91,7 +91,10 @@ body {
 }
 
 .project-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px; /* можно регулировать */
   background: white;
   border-radius: 12px;
   padding: 1.2rem;
@@ -133,6 +136,7 @@ body {
 
 /* Статус — ниже линии */
 .project-card .status {
+  margin-top: auto; 
   display: inline-block;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
