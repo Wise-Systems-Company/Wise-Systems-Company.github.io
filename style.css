@@ -320,3 +320,30 @@ footer a:hover {
   background: #ede7f6; /* Лавандовый */
   color: #5e35b1;
 }
+/* Картинки */
+.image-placeholder {
+  background: #f5f7fa;
+  border: 2px dashed #cbd5e0;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #718096;
+  font-style: italic;
+}
+
+.repo-link {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.repo-link:hover {
+  background: #2980b9;
+  text-decoration: none;
+}
